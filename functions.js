@@ -11,7 +11,7 @@ function sumUp(...numbers) { /*numbers = array et les ... permet a JS d accepter
     let result = 0;
 
     for (const number of numbers) {
-        result += number;
+        result += number; /* = à result = result + number*/
     }
 
     return result
@@ -19,7 +19,7 @@ function sumUp(...numbers) { /*numbers = array et les ... permet a JS d accepter
 
 
 const inputNumbers = [2, 5, 10, 45, 56];
-console.log(sumUp(...inputNumbers)); /*si la value dans l execution d'une fonction est une array, les ... permettent de spread chaque valeur de l array en une value a part entiere*/
+console.log(sumUp(...inputNumbers)); /*si la value dans l execution d'une fonction est une array, les ... permettent de spread chaque valeur de l array en une value a part entiere, sinon le resultat afficherait une suite*/
 
 
 console.log(sumUp); /*functions are objects*/
